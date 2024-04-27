@@ -1,0 +1,25 @@
+{   
+    "compilerOptions": {
+        "types": [
+            "node",
+            "webpack-env"
+        ],
+        "sourceMap": true,
+        "target": "ES2020",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["./*"],
+            "@/*": ["./src/*"]
+        }
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.vue",
+        "src/main.js",
+        "src/route.ts"]
+}
